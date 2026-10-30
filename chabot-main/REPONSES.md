@@ -52,3 +52,9 @@ Au début, j’ai eu du mal à relier le HTML et le CSS au fichier JavaScript po
 Ce qui fonctionne :
 
 Ce qui reste à terminer :
+Bonus :
+Deux nouveaux mots : navigateur et serveur.
+Les sept questions et réponses visibles au-dessus du chat.
+« Le chatbot réfléchit… », puis la réponse lettre par lettre.
+Le prénom mémorisé avec « Je m’appelle Nathan » et réutilisé dans les réponses.
+Recommencer efface aussi le prénom.
