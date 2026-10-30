@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title id="titre-page">Votre guide du Web</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <main class="chatbot">
+    <header class="presentation">
+      <p class="etiquette">Votre premier pas dans le Web</p>
+      <h1>Un petit message.<br>Une nouvelle découverte.</h1>
+      <p class="introduction">Moi, c’est <span id="nom-presentation"></span> ! Envoyez un mot-clé pour découvrir les bases du développement Web.</p>
+    </header>
+
+    <aside class="mots-cles" aria-labelledby="titre-mots-cles">
+      <p class="etiquette">À découvrir</p>
+      <h2 id="titre-mots-cles">Les questions et leurs réponses</h2>
+      <p>Envoyez un mot-clé ci-dessous. Les espaces et les majuscules sont acceptés.</p>
+      <dl id="liste-reponses" class="liste-reponses"></dl>
+      <p class="conseil-prenom"><strong>Pour se présenter :</strong> écrivez « Je m’appelle Nathan ». Je retiendrai votre prénom jusqu’à ce que vous cliquiez sur « Recommencer » ou rechargiez la page.</p>
+    </aside>
+
+    <section class="conversation" aria-labelledby="titre-conversation">
+      <header class="conversation-entete">
+        <div>
+          <p class="etiquette">Discutons ensemble</p>
+          <h2 id="titre-conversation"><span id="nom-chatbot"></span>, votre guide du Web</h2>
+        </div>
+        <p class="compteur">Messages envoyés : <span id="compteur">0</span></p>
+      </header>
+
+      <div class="echanges">
+        <section class="message message-utilisateur">
+          <h3 id="titre-message">Vous</h3>
+          <p id="dernier-message"></p>
+        </section>
+        <section class="message message-bot">
+          <h3 id="titre-reponse"></h3>
+          <p id="statut" class="statut" role="status"></p>
+          <p id="reponse" aria-live="polite" aria-atomic="true" aria-busy="false"></p>
+        </section>
+      </div>
+
+      <div class="saisie">
+        <label for="message">Votre message</label>
+        <p id="conseil-saisie" class="conseil">Saisissez un mot-clé de la liste, par exemple « html », ou présentez-vous avec « Je m’appelle Nathan ».</p>
+        <div class="controles">
+          <input id="message" name="message" type="text" maxlength="200" placeholder="Écrivez ici…" autocomplete="off" aria-describedby="conseil-saisie erreur">
+          <button id="envoyer" type="button">Envoyer</button>
+        </div>
+        <p id="erreur" class="erreur" aria-live="polite"></p>
+        <button id="recommencer" class="bouton-secondaire" type="button">Recommencer</button>
+      </div>
+    </section>
+
+    <footer>Apprendre le Web, une conversation à la fois.</footer>
+  </main>
+</body>
+</html>

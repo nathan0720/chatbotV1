@@ -1,0 +1,183 @@
+/* Couleurs HETIC et police de la page. */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #122e27;
+  background-color: #f2f7f5;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Une largeur maximale et des marges automatiques centrent le contenu. */
+.chatbot {
+  max-width: 820px;
+  margin: 20px auto;
+}
+
+.presentation {
+  margin-bottom: 30px;
+}
+
+.etiquette {
+  color: #086653;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0 0 8px;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+h3 {
+  font-size: 14px;
+  margin: 0 0 6px;
+}
+
+.introduction, .conseil, footer {
+  color: #4d655d;
+}
+
+/* Les zones se suivent dans l'ordre du HTML. */
+.conversation {
+  background-color: white;
+  border: 1px solid #d6e4de;
+  border-radius: 20px;
+}
+
+.conversation-entete, .echanges, .saisie {
+  padding: 20px;
+}
+
+.compteur {
+  font-size: 14px;
+  margin: 10px 0 0;
+}
+
+#compteur {
+  color: #086653;
+  font-weight: bold;
+}
+
+.echanges {
+  background-color: #f9fcfa;
+  border-top: 1px solid #d6e4de;
+  border-bottom: 1px solid #d6e4de;
+}
+
+.message {
+  padding: 15px;
+  border: 1px solid #d6e4de;
+  border-radius: 12px;
+  overflow-wrap: anywhere;
+}
+
+.message p {
+  margin: 0;
+}
+
+.message-utilisateur {
+  margin-bottom: 15px;
+  background-color: #d8faf0;
+}
+
+.message-bot {
+  background-color: white;
+}
+
+/* Le champ occupe la largeur disponible, même sur petit écran. */
+label {
+  font-weight: bold;
+}
+
+.conseil {
+  font-size: 14px;
+  margin: 5px 0 12px;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding: 12px;
+  border: 1px solid #809e90;
+  border-radius: 8px;
+}
+
+button {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #122e27;
+  background-color: #2ee7c4;
+  margin-top: 10px;
+  padding: 10px 18px;
+  border: 1px solid #086653;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #24cfaf;
+}
+
+/* Un contour permet de voir le contrôle sélectionné au clavier. */
+input:focus, button:focus {
+  outline: 3px solid #086653;
+  outline-offset: 3px;
+}
+
+.bouton-secondaire {
+  background-color: white;
+}
+
+.erreur {
+  color: #ac2535;
+}
+
+.mots-cles {
+  margin-bottom: 24px;
+}
+
+.liste-mots {
+  padding-left: 24px;
+  color: #086653;
+}
+
+footer {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #d6e4de;
+}
+
+/* Le catalogue reste lisible au-dessus de la conversation sur mobile. */
+.mots-cles {
+  background: white;
+  border: 1px solid #d6e4de;
+  border-radius: 20px;
+  padding: 20px;
+}
+.liste-reponses { margin: 16px 0; }
+.liste-reponses > div { padding: 12px 0; border-top: 1px solid #d6e4de; }
+.liste-reponses dt { font-weight: bold; color: #086653; }
+.liste-reponses dd { margin: 4px 0 0; overflow-wrap: anywhere; }
+.conseil-prenom { background: #d8faf0; border-radius: 8px; padding: 12px; }
+.statut { color: #4d655d; font-style: italic; }
+.statut:empty { display: none; }
+.en-cours::after { content: "▍"; color: #086653; }
+@media (max-width: 480px) {
+  body { padding: 12px; }
+  h1 { font-size: 30px; }
+  .conversation-entete, .echanges, .saisie, .mots-cles { padding: 16px; }
+}
